@@ -1,0 +1,419 @@
+/* Coded by Jade Allen Cook 2015 */
+
+
+/* Setup defaults */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica';
+    color: #464646;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:live {
+	text-decoration: none;
+}
+
+/* The darker grey toolbar on the top of the browser */
+
+#grey-bar {
+    background-color: #464646;
+    display: inline-table;
+    width: 100%;
+    z-index: 5;
+}
+
+
+/* Holder for the stars on the grey bar */
+
+#star-holder {
+    display: inline;
+    float: left;
+    margin-left: 25px;
+}
+
+
+/* For every star */
+
+.star {
+    height: 15px;
+    margin: 15px 5px;
+    opacity: 0.75;
+}
+
+
+/* Little animation for the stars */
+
+.star:hover {
+    opacity: 1;
+}
+
+
+/* Holder for the social media icons on the grey bar */
+
+#social-media-holder {
+    display: inline;
+    float: right;
+    margin-right: 25px;
+}
+
+
+/* For each social media icon */
+
+.social-icon {
+    height: 15px;
+    margin: 15px 5px;
+    opacity: 0.75;
+}
+
+
+/* Another little animation for the social icons */
+
+.social-icon:hover {
+    opacity: 1;
+}
+
+
+/* Bar under grey bar that holds logo */
+
+#logo-bar {
+    width: 100%;
+    background-color: #F1F1F2;
+    padding: 15px 0px;
+    text-align: center;
+    border-bottom: 3px solid #464646;
+}
+
+
+/* The logo in the bar */
+
+#bar-logo {
+    height: 50px;
+}
+
+
+/* Main image with buttons */
+
+#call-to-action {
+    background-image: url('../img/meditating.jpg');
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-bottom: 3px solid #464646;
+}
+
+#action-form {
+    width: 35%;
+    background-color: #FFF;
+    opacity: 0.75;
+    height: 100%;
+    float: left;
+    min-width: 400px;
+    text-align: center;
+    display: inline-table;
+    border-bottom: 3px solid #F7B26E;
+}
+
+
+/* Adjustments for phone */
+
+@media screen and (max-width: 700px) {
+    #action-form {
+        width: 100%;
+    }
+}
+
+
+/* Logo in the form */
+
+#round-logo {
+    width: 250px;
+    display: block;
+    margin-top: 55px;
+}
+
+
+/* Buttons with animations underneath */
+
+#orange-call-btn {
+    background-color: #F78F1E;
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    font-size: 1.5em;
+    padding: 15px;
+    width: 250px;
+    border-radius: 3px;
+    font-weight: 300;
+}
+
+#orange-call-btn:hover {
+    background-color: #F1A23F;
+}
+
+#blue-call-btn {
+    background-color: #65C8C6;
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    font-size: 1.5em;
+    padding: 15px;
+    width: 250px;
+    border-radius: 3px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+#blue-call-btn:hover {
+    background-color: #78CAC2;
+}
+
+
+/* Middle description section */
+
+#grey-info-bar {
+    width: 100%;
+    background-color: #464646;
+    padding: 15px 0px;
+    text-align: center;
+    border-bottom: 3px solid #464646;
+    display: inline-table;
+}
+
+#grey-info-bar h1 {
+    color: #FFF;
+    font-size: 4em;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin: 0px 25px;
+    color: #65C8C6;
+}
+
+#grey-info-bar h1 b{
+    font-weight: 400;
+}
+
+#grey-info-bar p {
+    color: #FFF;
+    margin: 0px 25px;
+    line-height: 25px;
+    font-weight: 35;
+    text-align: left;
+    max-width: 800px;
+}
+
+#biggest-loser {
+    width: 55%;
+    float: right;
+    margin: 0px 75px 15px 15px;
+    max-width: 250px;
+}
+
+#biggest-losers {
+    width: 100%;
+    display: none;
+}
+
+.before-pics {
+    width: 20%;
+    max-width: 200px;
+}
+
+@media screen and (min-width: 800px) {
+    #biggest-losers {
+        display: block;
+    }
+    #biggest-loser {
+        display: none;
+    }
+    #grey-info-bar p {
+        text-align: center;
+        margin-bottom: 25px;
+        margin: 0px auto;
+    }
+}
+
+#handbook {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #F7B26E;
+    border-top: 3px solid #F7B26E;
+}
+
+#retreat-photo {
+    width: 100%;
+    height: 250px;
+    background-image:url('../img/lady-with-hat.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+#specials {
+    width: 100%;
+    text-align: center;
+}
+
+.special-tag {
+    display: inline;
+    float: center;
+    margin: 0px 5px 0px 5px;
+    width: 17%;
+    max-width: 150px;
+    z-index: 1;
+    vertical-align: top;
+    top: 0px;
+}
+
+#special-background {
+    background-image: url('../img/oatmeal.jpg');
+    background-size: cover;
+    display: block;
+}
+
+#front-page-form {
+    display: inline-block;
+    background-color: #FFF;
+    padding: 0px 25px;
+    border-radius: 5px;
+    max-width: 550px;
+}
+
+#front-page-form h1 {
+    color: #FFF;
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin: 25px 25px;
+    color: #65C8C6;
+}
+
+#front-page-form p {
+    text-align: center;
+    margin: 25px 25px;
+}
+
+#cutout-people {
+    padding-top: 25px;
+}
+
+.cutout-person {
+    max-width: 150px;
+    width: 25%;
+}
+
+/* Adjustments for phone */
+
+@media screen and (max-width: 800px) {
+    #specials img:last-child { 
+        display: none; 
+        width: 1px;
+    }
+    #specials img:first-child { 
+        display: none; 
+        width: 1px;
+    }
+    .special-tag { 
+        width: 25%;
+        max-width: 150px;
+    }
+}
+
+#logo-bar-footer {
+    width: 100%;
+    background-color: #F1F1F2;
+    padding: 15px 0px;
+    text-align: center;
+    border-bottom: 3px solid #F7B26E;
+    margin-bottom: -2px;
+}
+
+.bar-logo-pop {
+    width: 12%;
+    max-width: 175px;
+}
+
+.bottom-logo-bar {
+    border-top: 3px solid #F7B26E;
+}
+
+#footer-buttons {
+    display: inline-table;
+    width: 100%;
+    background-color: #F7B26E;
+}
+
+.footer-button {
+    display: inline-block;
+    width: 20%;
+    max-width: 150px;
+    margin: 0px 2px;
+}
+
+.form-input {
+    background-color: #E6E6E6;
+    width: 50%;
+    min-width: 500px;
+    display: block;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 1em;
+    border-style: none;
+    color: #464646;
+}
+
+#grey-info-bar form h1 {
+    color: #F7B26E;
+    font-size: 2em;
+    color: #78CAC2;
+}
+
+#grey-info-bar form h1 b {
+    color: #F7B26E;
+}
+
+#grey-info-bar form span {
+    color: #FFF;
+    display: block;
+    width: 50%;
+    min-width: 500px;
+    text-align: left;
+    color: #78CAC2;
+    margin-top: 20px;
+    font-size: .75em;
+}
+
+#form-btn {
+    background-color: #F7B26E;
+    border-style: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #464646;
+    width: 50%;
+    max-width: 350px;
+    min-width: 150px;
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+
+@media screen and (max-width: 800px) {
+    #footer-buttons img:last-child { 
+        display: none; 
+    }
+}
